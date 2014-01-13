@@ -72,4 +72,10 @@
  @param defaultsKey key for defaults
  */
 - (void)saveTokenToDefaults:(NSString *)defaultsKey;
+
+/**
+ Check if token is expired
+ */
+- (BOOL)isExpired;
+
 @end

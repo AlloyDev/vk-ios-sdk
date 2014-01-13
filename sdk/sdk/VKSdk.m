@@ -97,7 +97,6 @@ static VKSdk *vkSdkInstance = nil;
 
 + (void)setAccessTokenError:(VKError *)error {
 	vkSdkInstance->_accessToken = nil;
-  if ([vkSdkInstance->_delegate respondsToSelector:@selector(vkSdkUserDeniedAccess:)])
     [vkSdkInstance->_delegate vkSdkUserDeniedAccess:error];
 }
 
